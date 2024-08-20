@@ -1,2 +1,2 @@
 nimi = input ("Kerro nimesi:")
-print("Terve, "+nimi+ "!")
+print(f"Terve, {nimi}!")
