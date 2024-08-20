@@ -1,0 +1,7 @@
+luku1 = float(input("Syötä luku 1: "))
+luku2 = float(input("Syötä luku 2: "))
+luku3 = float(input("Syötä luku 3: "))
+summa = (luku1 + luku2 + luku3)
+tulo = (luku1 * luku2 * luku3)
+keski = ((luku1 + luku2 + luku3)/3)
+print(f"Lukujen, summa on {summa}, tulo on {tulo}, keskiarvo on {keski}")

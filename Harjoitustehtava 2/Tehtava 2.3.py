@@ -1,4 +1,3 @@
-import math
 kanta = float(input("Syötä suorakulmion kanta: "))
 korkeus = float(input("Syötä suorakulmion korkeus: "))
 pintaala = (kanta*korkeus)
