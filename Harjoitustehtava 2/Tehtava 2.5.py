@@ -4,4 +4,4 @@ luoti = float(input("Anna luodit: "))
 massa = ((((((leiviska*20)+naula)*32)+luoti)*13.3))
 massakg = massa //1000
 massag = massa%1000
-print(f"Massa on nykymittojen mukaan:\n{massakg:.0f} kilogrammaa ja {massag:3.2f} grammaa")
+print(f"Massa on nykymittojen mukaan:\n{massakg:.0f} kilogrammaa ja {massag:.2f} grammaa")
