@@ -7,4 +7,3 @@ while luku<1000:
             print(f"{luku}")
             break
         luku = luku+1
-
