@@ -17,7 +17,7 @@ while i_kayttajatunnus != kayttajatunnus:
     print(f"Väärä käyttäjätunnus. (•̀з•́)")
     i_kayttajatunnus = input(f"Anna käyttäjä tunnus:")
     if kerrat == 5:
-        print(f"Pääsy evätty òwó")
+        print(f"Pääsy evätty òwó !")
         break
 
 if i_kayttajatunnus == kayttajatunnus:
@@ -29,7 +29,7 @@ if i_kayttajatunnus == kayttajatunnus:
         print(f"Väärä salasana. (•̀з•́)")
         i_salasana = input(f"Anna salasana:")
         if kerrat == 5:
-            print(f"Pääsy evätty òwó")
+            print(f"Pääsy evätty òwó !")
             break
 
 
