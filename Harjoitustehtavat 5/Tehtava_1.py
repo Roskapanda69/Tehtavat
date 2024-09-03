@@ -6,7 +6,7 @@ noppat= int(input(f"Anna heitettävien noppien määrä: "))
 luvut= []
 heitot = 0
 
-while heitot < noppat:
+for heitot in range(noppat):
    heitto = random.randint(1,6)
    luvut.append(heitto)
    heitot += 1
