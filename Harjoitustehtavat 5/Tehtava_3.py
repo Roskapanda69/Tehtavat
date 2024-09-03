@@ -17,8 +17,7 @@ while jakaa <= luku :
         if luku%numero!=0 and not jako==1 and not jako==luku:
             jaot +=1
 
-
-if jaot==(luku-2) :
+if jaot==(luku-2):
     print(f"Luku on alukuluku")
 
 else:
