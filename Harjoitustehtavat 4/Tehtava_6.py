@@ -11,16 +11,18 @@ import math
 
 kokonaismaara = int(input(f"Anna arvottavien pisteiden määrä: "))
 sisa=0
-koko = kokonaismaara
+lasku = 0
 
 
-while (4 * sisa / koko <= math.pi ):
+#while ((4 * sisa) / koko <= math.pi ):
+while lasku < kokonaismaara:
     x_dot = random.uniform( -1, 1)
     y_dot = random.uniform(-1, 1)
-    if (x_dot**2+y_dot**2<2):
+    if x_dot**2+y_dot**2<1:
         sisa += 1
+    lasku += 1
 else:
-    print(f"Piin likiarvo on {4*sisa/koko} UwU")
+    print(f"Piin likiarvo on {(sisa/kokonaismaara)*4} UwU")
 
 
 
