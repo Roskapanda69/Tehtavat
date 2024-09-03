@@ -12,10 +12,10 @@ for numero in range(2, luku ):
         jaot +=1
 
 if jaot==0:
-    print(f"Luku on alukuluku")
+    print(f"Luku on alukuluku UwU")
 
 else:
-    print(f"Luku ei ole alkuluku")
+    print(f"Luku ei ole alkuluku òwó")
 
 
 
