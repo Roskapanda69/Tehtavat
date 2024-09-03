@@ -9,14 +9,16 @@
 luku = int(input(f"Anna luku :"))
 jakaa = 1
 jaot = 0
-
-while jakaa < luku+1 :
-    for tulos in range(jakaa, luku+1, jakaa):
+jako = 0
+while jakaa <= luku :
+    for numero in range(jakaa, luku+1):
         jakaa += 1
-        if tulos == luku or tulos == 1 or tulos/luku==1 :
+        jako = luku/numero
+        if luku%numero!=0 and not jako==1 and not jako==luku:
             jaot +=1
 
-if jaot == 2 :
+
+if jaot==(luku-2) :
     print(f"Luku on alukuluku")
 
 else:
