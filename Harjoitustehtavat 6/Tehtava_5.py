@@ -4,5 +4,25 @@
 # Kirjoita testausta varten pääohjelma, jossa luot listan,
 # kutsut funktiota ja tulostat sen jälkeen sekä alkuperäisen että karsitun listan.
 
-if n%2!=0:
-    remove n
+def paritonpois(lista):
+    for n in lista:
+        if n%2==0:
+            siisti.append(n)
+        else:
+            continue
+
+
+lista= []
+siisti= []
+numero= 0
+
+while True:
+    syotto= input("Anna lukuja òwó : ")
+    if syotto=="":
+        break
+    numero= int(syotto)
+    lista.append(numero)
+
+paritonpois(lista)
+print(f"Alkuperäinen lista: {lista}")
+print(f"Lukjen siistittylista UwU : {siisti}")
