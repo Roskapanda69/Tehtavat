@@ -7,8 +7,8 @@ import math
 
 
 def cheappizza(hinta, halkaisi,):
-    return hinta/((math.pi*((halkaisi/2)**2))/100)
-
+    #return hinta/((math.pi*((halkaisi/2)**2))/10000)
+    return hinta / ((math.pi * ((halkaisi/100) / 2) ** 2))
 
 halkaisi1= float(input("Anna ekan pizzan halkaisija senttimetreinä OwO: "))
 hinta1= float(input("Anna ekan pizzan hinta OwO: "))
@@ -20,6 +20,6 @@ pizza1=cheappizza(hinta1,halkaisi1)
 pizza2=cheappizza(hinta2,halkaisi2)
 
 if pizza1<pizza2:
-    print(f"Eka pitsa {pizza1:0.2f} e/m ja se on {pizza2-pizza1:0.2f} e halvempi.")
+    print(f"Eka pitsa {pizza1:0.2f} e/m^2 ja se on {pizza2-pizza1:0.2f} e halvempi.")
 if pizza2<pizza1:
-    print(f"Tokan pitsa {pizza2:0.2f} e/m ja se on {pizza1-pizza2:0.2f} e halvempi.")
+    print(f"Tokan pitsa {pizza2:0.2f} e/m^2 ja se on {pizza1-pizza2:0.2f} e halvempi.")
