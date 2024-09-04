@@ -17,7 +17,7 @@ siisti= []
 numero= 0
 
 while True:
-    syotto= input("Anna lukuja òwó : ")
+    syotto= input("Anna lukuja OwO : ")
     if syotto=="":
         break
     numero= int(syotto)
