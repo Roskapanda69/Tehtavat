@@ -1,17 +1,22 @@
 #Kirjoita funktio, joka saa parametrinaan listan kokonaislukuja.
 #Ohjelma palauttaa listassa olevien lukujen summan. Kirjoita testausta varten pääohjelma, jossa luot listan,
 #kutsut funktiota ja tulostat sen palauttaman summan.
+from gc import collect
 
-def summaaja():
-    for n in listaa:
-        summa=n+n
-        return summa
+def summaaja(listaa):
+    summa=0
+    summa=sum(listaa)
+    return summa
 
 
 listaa= []
+numero= 0
 
 while True:
-    numero= input("Anna summattavat luvut: ")
+    syotto= input("Anna summattavat luvut òwó : ")
+    if syotto=="":
+        break
+    numero= int(syotto)
     listaa.append(numero)
-else:
-    print(f"Lukjen summa on: {summaaja()}")
+
+print(f"Lukjen summa on UwU : {summaaja(listaa)}")
