@@ -25,4 +25,4 @@ while True:
 
 paritonpois(lista)
 print(f"Alkuperäinen lista: {lista}")
-print(f"Lukjen siistittylista UwU : {siisti}")
+print(f"Parillisija lukuja ovat UwU : {siisti}")

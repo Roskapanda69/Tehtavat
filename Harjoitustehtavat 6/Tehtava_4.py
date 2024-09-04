@@ -13,7 +13,7 @@ listaa= []
 numero= 0
 
 while True:
-    syotto= input("Anna summattavat luvut òwó : ")
+    syotto= input("Anna summattavat luku òwó : ")
     if syotto=="":
         break
     numero= int(syotto)
