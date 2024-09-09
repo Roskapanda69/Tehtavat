@@ -11,11 +11,11 @@ kuukausi = int(input("Anna kuukauden numero UwU : "))
 def vuodenajatus():
     if kuukausi <=2 or kuukausi ==12:
         print(f"{kuukausi} kuuluu vuodenaikaan {vuodenajat[3]} ")
-    if kuukausi <=5 and not kuukausi <=2:
+    elif kuukausi <=5:
         print(f"{kuukausi} kuuluu vuodenaikaan {vuodenajat[0]} ")
-    if kuukausi <= 8 and not kuukausi <=5:
+    elif kuukausi <= 8 :
         print(f"{kuukausi} kuuluu vuodenaikaan {vuodenajat[1]} ")
-    if kuukausi <= 11 and not kuukausi <= 8:
+    elif kuukausi <= 11 :
         print(f"{kuukausi} kuuluu vuodenaikaan {vuodenajat[2]} ")
     return
 
