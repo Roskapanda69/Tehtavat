@@ -9,7 +9,7 @@ nimet = set()
 def tsekaaja(nimi):
     if nimi in nimet:
         print(f"Aienmmin syötetty nimi UwU.")
-    if nimi not in nimet:
+    if nimi not in nimet and not nimi=="":
         nimet.add(nimi)
         print(f"Uusi nimi UwU ")
     return
