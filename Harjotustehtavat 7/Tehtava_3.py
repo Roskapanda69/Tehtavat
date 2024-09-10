@@ -9,11 +9,11 @@
 # Esimerkiksi Helsinki-Vantaan lentoaseman ICAO-koodi on EFHK.
 # Löydät koodeja helposti selaimen avulla.)
 
-asemat = {"EFHK", "Helsinki-Vantaan"
-          "EFIV", "Ivalo Airport"
-          "EFJO", "Joensuu Airport"
-          "EFJY", "Jyväskylä Airport"
-          }
+asemat = {"EFHK": "Helsinki-Vantaan",
+          "EFIV": "Ivalo Airport",
+          "EFJO": "Joensuu Airport",
+          "EFJY": "Jyväskylä Airport"}
+
 def lisaa():
     koodi= input("Anna asemana koodi: ")
     nimi= input("Anna aseman nimi: ")
@@ -23,14 +23,14 @@ def lisaa():
 def hae():
     haku= input("Anna aseman ICAO-koodi: ")
     if haku in asemat:
-        print(f"")
+        print(f"Koodilla {haku} löytyi asema {asemat[haku]}.")
 
 while True:
     syote=input("Haluatko syöttää uuden kentän (Y), vai hakea asemia (S) vai lopetta (jätä tyhjäksi): ")
     if syote=="y" or syote=="Y":
         lisaa()
     if syote=="s" or syote=="S":
-
+        hae()
     if syote=="":
         break
 
