@@ -5,9 +5,9 @@
 
 import mysql.connector
 
-def hae_asema(icao):
-    sql = (f'SELECT name, municipality FROM airport WHERE ident = "{icao}"')
-    cursor = db_connection.cursor()
+def hae_asemat(iso):
+    sql = (f'SELECT type, count(*) FROM airport WHERE iso_country = "{iso}" group by type')
+    cursor = db_connection.cursor(dictionary=True)
     cursor.execute(sql)
     airport_data = cursor.fetchall()
     return airport_data
@@ -20,3 +20,9 @@ db_connection = mysql.connector.connect(
     password="Hohojaa",
     autocommit=True
     )
+
+country= input(f'Anna maan ISO-koodi: ')
+airports = hae_asemat(country)
+for airport in airports:
+    print(f'Typpi: {airport["type"]} ja määrä: {airport["count(*)"]}')
+
