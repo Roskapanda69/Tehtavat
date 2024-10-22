@@ -50,7 +50,6 @@ while True:
                 print(f'Auto rekisterillä: {auto.rekisteritunnus}, huippunopeus oli: {auto.huippunopeus}, Auton nopeus maalissa oli: {auto.nopeus_nyt}, Auto ajoi {auto.kuljettu_matka} km. ')
             valmis = True
             break
-
     if valmis == True:
         break
 
