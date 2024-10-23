@@ -41,11 +41,11 @@ class Auto:
 
 
 class Kilpailu:
-    def __init__(self, nimi, pituus , autot):
+    def __init__(self, nimi, pituus , autoja, autot):
         self.nimi = nimi
         self.pituus = pituus
         self.autot = []
-        for name in range(1, 11):
+        for name in range(1, autoja + 1):
             rekisteritunnus = 'ABC - ' + str(name)
             huippunopeus = randint(100, 200)
             self.autot.append(Auto(rekisteritunnus, huippunopeus))
@@ -58,15 +58,21 @@ class Kilpailu:
 
     def tulosta_tilanne(self):
         for auto in self.autot:
-            print(f'Auto rekisterillä: {auto.rekisteritunnus}, huippunopeus oli: {auto.huippunopeus}, Auton nopeus maalissa oli: {auto.nopeus_nyt}, Auto ajoi {auto.kuljettu_matka} km. ')
+            print(f'Auto: {auto.rekisteritunnus}, huippunopeus oli: {auto.huippunopeus}, Auton oli: {auto.nopeus_nyt}, Auto ajoi {auto.kuljettu_matka} km. ')
+
+    def kilpailu_ohi(self):
+        for auto in self.autot:
+            if auto.kuljettu_matka>=self.pituus:
+                return True
+            else:
+                return False
 
 
+suuriromuralli = Kilpailu( 'Suuriromuralli',8000, 10, autot =[])
 
-
-
-
-
-
+while not suuriromuralli.kilpailu_ohi():
+    suuriromuralli.tunti_kuluu()
+    suuriromuralli.tulosta_tilanne()
 
 
 
