@@ -21,7 +21,7 @@ print(np.radians(b2))
 a3 = np.array([30, 45, 60, 90, 120, 135, 150, 180, 270, 360])
 
 for i in a3:
-    print(np.radians(i))
+    print(f'{i} = {np.radians(i)}')
 
 # Tehtävä 4
 
