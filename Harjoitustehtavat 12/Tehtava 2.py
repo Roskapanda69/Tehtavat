@@ -11,6 +11,7 @@ from keything import secretkey
 
 kaupunki = input(f'Anna kaupungin nimi: ').capitalize()
 
+# Change {secretkey} for your own api-key to this code to work.
 haku = f'https://api.openweathermap.org/data/2.5/weather?q={kaupunki}&appid={secretkey}'
 
 
