@@ -1,3 +1,4 @@
+# Tehtävät 2 ja 3 viikko 3
 from cProfile import label
 from math import radians
 
